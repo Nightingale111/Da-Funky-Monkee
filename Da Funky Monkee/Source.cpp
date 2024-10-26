@@ -18,7 +18,13 @@ int main() {
 
 }
 
-// Asks how many itmes the user wants to add and then allows the user to set the name and orignal price of how many itmes they wanted to add
+/*-------------------------------------------------------------------------
+Function name: addItemToList
+Parameters: vector<Item>& inventory
+Return type: void
+Description: Asks how many items the user wants to add and then allows the 
+user to set the name and original price of how many itmes they wanted to add
+--------------------------------------------------------------------------*/
 void addItemsToList(vector<Item>& inventory) {
     int itemNumber;
     cout << "How many items would you like to add to the inventory? ";
@@ -36,7 +42,13 @@ void addItemsToList(vector<Item>& inventory) {
     }
 }
 
-// Prints the name, original price, and discounted price of each item in ascending order
+/*-------------------------------------------------------------------------
+Function name: printInventory
+Parameters: vector<Item> inventory
+Return type: void
+Description: Prints the name, original price, and discounted price of each 
+item in ascending order
+--------------------------------------------------------------------------*/
 void printInventory(vector<Item> inventory) {
     cout << "\nInventory:\n";
     for (Item item : inventory) {
